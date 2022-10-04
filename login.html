@@ -66,10 +66,25 @@
             <div class="formBx">
               <form action="" onsubmit="return false;">
                 <h2>Create an account</h2>
-                <input type="text" name="" placeholder="Username" />
+               <input type="text" name="" placeholder="Firstname" />
+                <input type="text" name="" placeholder="Surname" />
+                <input type="number" name="" placeholder="Age" />
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender" onchange="changeFunction(this)">
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                  <option value="3">Other</option>
+                </select>
                 <input type="email" name="" placeholder="Email Address" />
+                <input type="text" name="" placeholder="Blood Group" />
                 <input type="password" name="" placeholder="Create Password" />
                 <input type="password" name="" placeholder="Confirm Password" />
+                  <label for="disease">Diagnosis</label>
+                  <select name="disease" id="disease" onchange="changeFunction(this)">
+                    <option value="1">Fabry</option>
+                    <option value="2">Pompe</option>
+                    <option value="3">Sickle Cell Anemia</option>
+                  </select>
                 <input type="submit" name="" value="Sign Up" />
                 <p class="signup">
                   Already have an account ?
